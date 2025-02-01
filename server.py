@@ -78,4 +78,4 @@ def confirmUser(user: models.UserModel, remote_key: str) -> bool:
     telegram.edit_message(user.id, message.message_id, 'authorization timed out! try again...')
     return False
 
-app.run('192.168.43.230')
+app.run(config.ADDRESS,config.PORT)

@@ -1,3 +1,4 @@
 BOT_TOKEN = ''
-TG_TOKEN = ''
 APP_KEY = ''
+ADDRESS = ''
+PORT = ''
