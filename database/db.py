@@ -28,7 +28,6 @@ def select(table_name, columns, values):
     return cursor.fetchall()
 
 def insert(table_name, columns, values):
-    print(f'insert into {table_name} ({join_array(columns)}) values ({join_array(values)})')
     cursor.execute(f'insert into {table_name} ({join_array(columns)}) values ({join_array(values)})')
     connection.commit()
 

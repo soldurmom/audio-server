@@ -176,32 +176,3 @@ class UsersMusicModel(Model):
         users_music = UsersMusicModel.getAllUsersMusicByUserId(user_id)
         for music in users_music:
             MusicModel.deleteMusicById(music[1])
-
-
-# user = UserModel(123456789, 'qwerty')
-
-# user.createUser()
-
-# print(True if UserModel.getUserByUsername('qwerty') else False)
-
-# MusicModel('123', 'lil qwe', 'qwe truck', 'lil qwe - qwe truck.mp3', 131).createMusic()
-# MusicModel('124', 'lil qwe', 'asd truck', 'lil qwe - asd truck.mp3', 131).createMusic()
-# MusicModel('126', 'lil qwe', 'zxc truck', 'lil qwe - zxc truck.mp3', 131).createMusic()
-
-# # print(MusicModel.getMusicById(music.id).get())
-
-# UsersMusicModel(123456789, '123').createUsersMusic()
-# time.sleep(5)
-# UsersMusicModel(123456789, '124').createUsersMusic()
-# time.sleep(5)
-# UsersMusicModel(123456789, '126').createUsersMusic()
-
-# print(UsersMusicModel.getAllUsersMusicByUserId(123456789))
-
-# if (UsersMusicModel.checkIsExpiredByUser(123456789)):
-#     UsersMusicModel.deleteAllExpiredByUser(123456789)
-#     print('qwe')
-
-# print(UsersMusicModel.getAllUsersMusicByUserId(123456789))
-
-print(MusicModel.getMusicByUserId(657586334))
